@@ -552,3 +552,19 @@ html.is-editing [contenteditable="true"]:hover {
     height: 390px;
   }
 }
+
+/* Generic figure images */
+.figure-card img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+/* Main intro map – keep aspect, don’t crop too much */
+.figure-card--map img {
+  max-height: 420px;      /* adjust to taste */
+  object-fit: contain;    /* show whole map */
+}
