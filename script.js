@@ -158,6 +158,14 @@ document.addEventListener("DOMContentLoaded", function () {
         event.preventDefault();
         openLightbox(target);
       }
+
+      if (target.matches(".figure-card-ola img")) {
+        // Don’t open while in text-edit mode
+        if (document.documentElement.classList.contains("is-editing")) return;
+
+        event.preventDefault();
+        openLightbox(target);
+      }
     });
 
     // Close when clicking dark background
