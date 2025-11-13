@@ -379,6 +379,13 @@ html.is-editing .edit-toggle-indicator {
   line-height: 1.55;
 }
 
+.figure-card-ola figcaption {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+
 /* Tables */
 
 .table-wrapper {
@@ -571,6 +578,17 @@ html.is-editing [contenteditable="true"]:hover {
 
 /* Figure images – clickable */
 .figure-card img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 14px;
+  object-fit: cover;
+  cursor: zoom-in;
+}
+
+/* Figure images – clickable */
+.figure-card-ola img {
   display: block;
   width: 100%;
   max-width: 100%;
